@@ -846,7 +846,7 @@ case 'play': case 'song':
 • Duration : ${aramas.videos[0].timestamp}
 • Url : ${aramas.videos[0].url}`
 var thumbyt = await getBuffer(aramas.videos[0].thumbnail)
-sendButLocation(from, captions, '© ' + ownername, thumbyt, [{buttonId: `.ytmp4 ${mulaikah}`, buttonText: {displayText: 'Video'}, type: 1},{buttonId: `.ytmp3 ${mulaikah}`, buttonText:{displayText: 'Audio'}, type: 1}], {quoted: mek})
+sendButLocation(from, captions, '© ' + ownername, thumbyt, [{buttonId: `${prefix}ytmp4 ${mulaikah}`, buttonText: {displayText: 'Video'}, type: 1},{buttonId: `${prefix}ytmp3 ${mulaikah}`, buttonText:{displayText: 'Audio'}, type: 1}], {quoted: mek})
 						})
 				} catch (err) {
 					reply('Terjadi kesalahan')
